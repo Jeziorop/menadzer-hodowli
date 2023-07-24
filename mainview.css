@@ -1,0 +1,401 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+a {
+    color: black;
+    transition-duration: 0.7s;
+}
+a:hover {
+    color: #585454;
+}
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #faa916;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 8px 8px -6px black;
+    transition-duration: 0.7s;
+}
+button:hover {
+    width: 120px;
+    height: 48px;
+    color: #585454;
+}
+.fixed {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.line {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.line hr {
+    width: 80%;
+    height: 2px;
+    background-color: #faa916;
+}
+.image {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #EEEEEE;
+}
+#view_main {
+    width: 100vw;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+}
+#view_header {
+    width: 100%;
+    height: 120px;
+    background-color: #faa916;
+    box-shadow: 0px 8px 6px -6px black;
+    position: relative; /* Dodaj tę linijkę */
+}
+#view_header div:nth-child(1){
+    width: 100%;
+    height: 70px;
+    background-color: #faa916;
+    display: flex;
+}
+#view_header div:nth-child(1) img{
+    width: 70px;
+    height: 70px;
+    padding-left: 40px;
+}
+#view_header div:nth-child(1) div{
+    flex-grow: 1;
+    height: 70px;
+    padding-left: 20px;
+    align-items: center;
+    background-color: #faa916;
+    font-size: xx-large;
+}
+#view_header div:nth-child(1) aside{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.7s;
+}
+#view_header div:nth-child(1) aside:hover{
+    color: #585454;
+    cursor: pointer;
+}
+#view_header div:nth-child(1) aside img{
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+}
+#view_header div:nth-child(2){
+    width: 100%;
+    height: 50px;
+    background-color:beige;
+    display: flex;
+}
+#view_header div:nth-child(2) div{
+    width: 25vw;
+    height: 50px;
+    display: flex;
+    background-color: #faa916;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.7s;
+}
+#view_header div:nth-child(2) div img {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+#view_header div:nth-child(2) div:nth-child(5) {
+    display: none;
+}
+#view_header div:nth-child(2) div:hover{
+    background-color: #faa916;
+    color:#585454;
+    cursor: pointer;
+}
+#view_section {
+    width: 100%;
+    height: 2300px;
+    background-color: white;
+}
+#view_section_image {
+    width: 100%;
+    height: 500px;
+    background-image: url("./images/pieski1/a3.jpg");
+}
+#view_section div:nth-child(1) div {
+    position: absolute;
+    width: 65vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#view_section div:nth-child(1) div span {
+    font-size: 40px;
+}
+#view_section div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+}
+#view_section div:nth-child(3){
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+#img_dog_1 {
+    width: 400px;
+    height: 500px;
+}
+#view_section div:nth-child(3) aside{
+    flex-grow: 1;
+    font-size: 20px;
+    padding: 40px;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#view_section div:nth-child(3) aside ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+}
+#view_section div:nth-child(3) aside ul li{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    list-style-type: none;
+}
+#view_section div:nth-child(5) {
+    width: 95%;
+    height: 600px;
+    padding-left: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#view_section_5div_1div {
+    width: 90%;
+}
+#view_section_5div_3div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#view_section_5div_3div aside {
+    height: 300px;
+    width: 250px;
+    background-color: #faa916;
+    box-shadow: 8px 8px 6px -6px black;
+    display: flex;
+    flex-direction: column;
+}
+#view_section_5div_3div span{
+    display: inline-block;
+    width: 200px;
+    padding-left: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#view_section_5div_3div ul {
+    list-style: none;
+}
+#view_footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 230px;
+    background-color: #faa916;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+}
+#view_footer header {
+    width: 100%;
+    height: 160px;
+    display: flex;
+}
+#view_footer header div{
+    width: 33.33333%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#view_footer img {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+#view_footer section{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+#view_footer section div{
+    width: 20vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+#view_footer section div:nth-child(5){
+    border: none;
+}
+#view_header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+}
+@media (max-width: 900px) { /*768*/
+    * {
+        font-size: small;
+    }
+    aside {
+        width: 100vw;
+    }
+    b {
+        font-size: large;
+    }
+    #view_section_image {
+        width: 100vw;
+        height: 500px;
+        background-image: url("./images/pieski1/dog1.jpg");
+    }
+    #view_section div:nth-child(3){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #view_section div:nth-child(3) aside{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
+    }
+    #view_section div:nth-child(5) {
+        padding-left: 0;
+        height: 500px;
+    }
+    #view_section div:nth-child(5) div:nth-child(2) {
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    #view_section div:nth-child(5) div:nth-child(2) img {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+    #view_section_5div_1div {
+        width: 95%;
+    }
+    #img_dog_1 {
+        display: none;
+    }
+    @media (max-width: 768px){
+        #view_header div:nth-child(1) aside{
+            text-indent: -9999px;  
+        }
+        #view_header div:nth-child(2) div{
+            text-indent: -9999px;  
+        }
+    }
+    @media (min-width: 653px){
+        #view_section {
+            height: 2500px;
+        }
+        #view_section div:nth-child(5) {
+            padding-left: 0;
+            height: 700px;
+        }
+        #view_section_5div_3div {
+            height: 800px;
+            margin-bottom: 100px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    #view_header div:nth-child(1) aside{
+        display: none;  
+    }
+    #view_header div:nth-child(2){
+        display: flex;
+        width: 100%;
+    }
+    #view_header div:nth-child(2) div{
+        padding: 0;
+        margin: 0;
+    }
+    #view_header div:nth-child(2) div img {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+    }
+    #view_header div:nth-child(2) div:nth-child(5) {
+        display: inherit;
+    }
+    #view_section {
+        height: 3000px;
+    }
+    #view_section_image {
+        height: 650px;
+    }
+    #view_section_image div{
+        margin-top: 40px;
+    }
+    #view_section_5div_1div {
+        width: 90%;
+    }
+    
+    #view_footer header div:nth-child(1){
+        display: none;
+    }
+    #view_footer header {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media (min-width: 350px) {
+        #view_section {
+            height: 3000px;
+        }
+        #view_section div:nth-child(5) {
+            padding-left: 0;
+            height: 650px;
+        }
+    }
+}
