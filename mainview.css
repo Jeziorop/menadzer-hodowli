@@ -202,7 +202,7 @@ button:hover {
     flex-direction: column;
 }
 #view_section_5div_1div {
-    width: 90%;
+    width: 100vw;
 }
 #view_section_5div_3div {
     width: 100vw;
@@ -361,11 +361,6 @@ button:hover {
         padding: 0;
         margin: 0;
     }
-    #view_header div:nth-child(2) div img {
-        width: 15px;
-        height: 15px;
-        padding: 0;
-    }
     #view_header div:nth-child(2) div:nth-child(5) {
         display: inherit;
     }
@@ -381,7 +376,11 @@ button:hover {
     #view_section_5div_1div {
         width: 90%;
     }
-    
+    #view_header div:nth-child(2) div img {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+    }
     #view_footer header div:nth-child(1){
         display: none;
     }
