@@ -318,11 +318,11 @@ h3 {
 }
 @media (max-width: 600px){
     #view_main {
-        height: 1600px;
+        height: 1400px;
     }
     #view_section form {
         width: 80vw;
-        height: 600px;
+        height: 400px;
         margin-left: 0vw;
     }
     #view_section form label {
@@ -335,9 +335,10 @@ h3 {
         width: 70vw;
     }
     #view_section form label input[type="submit"] {
-        margin-left: 25vw;
-        width: 100px;
+        margin-left: 20vw;
+        width: 30vw;
         height: 40px;
+        margin-top: 10px;
     }
     #view_section form label input[type="submit"]:hover {
         margin-left: 20vw;
